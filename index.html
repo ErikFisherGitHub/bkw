@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bináris Konverter | Szám ↔ Bináris átalakítás online</title>
+  <meta name="description" content="Gyors és ingyenes bináris konverter. Alakítsd át a számokat binárissá vagy binárisokat decimálissá könnyedén, online felületen.">
+  <meta name="keywords" content="bináris konverter, szám binárissá, bináris szám, bináris dekódolás, számrendszer átváltó">
+  <meta name="author" content="A Te Neved">
+  <link rel="canonical" href="https://teoldalad.hu/bináris-konverter">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🔝 Navigáció -->
+  <nav class="navbar">
+    <a class="github-link" href="https://github.com/ErikFisherGitHub" target="_blank" title="GitHub Repo">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 0a12 12 0 00-3.8 23.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.5-4-1.5a3.2 3.2 0 00-1.3-1.7c-1-.7.1-.7.1-.7a2.6 2.6 0 011.9 1.3 2.7 2.7 0 003.7 1.1c.1-.9.4-1.5.7-1.8-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 011.3-3.3 4.4 4.4 0 01.1-3.3s1-.3 3.3 1.3a11.4 11.4 0 016 0c2.3-1.6 3.3-1.3 3.3-1.3a4.4 4.4 0 01.1 3.3 4.7 4.7 0 011.3 3.3c0 4.7-2.8 5.7-5.5 6 .4.4.8 1 .8 2v3c0 .3.2.6.8.5A12 12 0 0012 0z"/>
+      </svg>
+    </a>
+
+    <button id="themeToggle" class="theme-btn" title="Világos / sötét mód">🌙</button>
+  </nav>
+
+  <!-- 🧮 Tartalom -->
+  <div class="container">
+    <header>
+      <h1>Bináris Konverter</h1>
+      <p>Alakíts át számokat binárissá vagy binárisokat decimálissá egy kattintással.</p>
+    </header>
+
+    <main class="converter">
+      <input type="text" id="inputValue" placeholder="Írj be egy számot vagy binárist" />
+
+      <label class="switch">
+        <input type="checkbox" id="modeSwitch" />
+        <span class="slider"></span>
+      </label>
+      <p class="mode-label" id="modeLabel">Szám → Bináris</p>
+
+      <button id="convertBtn">Átalakítás</button>
+
+      <div class="result neumorphic">
+        <p id="resultText">Eredmény ide kerül</p>
+        <button id="copyBtn" title="Eredmény másolása">📋 Másolás</button>
+        <p id="copyFeedback" class="copy-feedback"></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Bináris Konverter – Ingyenes online eszköz</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
