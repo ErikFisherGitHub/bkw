@@ -50,15 +50,37 @@ Nincs szükség semmilyen backendre – ez egy teljesen **statikus webapp**.
 
 ---
 
-## 📁 Fájlszerkezet
+## 📁 Mappaszerkezet
 
 ```
 bináris-konverter/
-├── index.html         # Fő HTML állomány
-├── style.css          # Neumorfikus dizájn
-├── script.js          # Logika, konverzió, másolás, témaváltás
-└── README.md          # Ez a dokumentáció
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── LICENSE
+├── .gitattributes
+├── .gitignore
+└── screenshots/
+    ├── light-mode.png
+    └── dark-mode.png
 ```
+
+## 🧱 Fájlszerkezet magyarázata
+
+A projekt fájljai a következő célokat szolgálják:
+
+| Fájl / mappa         | Leírás |
+|----------------------|--------|
+| `index.html`         | A weboldal belépőpontja – HTML szerkezet |
+| `style.css`          | Neumorfikus világos/sötét design |
+| `script.js`          | Az app logikája: konverzió, másolás, témaváltás |
+| `README.md`          | Ez a dokumentáció, használati útmutatóval |
+| `LICENSE`            | Apache License 2.0 – jogi nyilatkozat |
+| `.gitattributes`     | Git belső viselkedést szabályoz – nem szükséges letölteni |
+| `.gitignore`         | Meghatározza, mit zárjunk ki a verziókövetésből vagy csomagolásból |
+| `screenshots/`       | Képernyőképek a README-hez *(helyileg használva, nem kerül letöltésre)*
+
 
 ---
 
