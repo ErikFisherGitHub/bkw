@@ -1,0 +1,28 @@
+# 🧺 Képernyőképek (csak a README-hez, nem kell build-be)
+screenshots/
+
+# ⚙️ Git belső attribútumfájl (nem kell letöltéshez)
+.gitattributes
+
+# 🧾 Saját gitignore fájl – Git-ben marad, de nem megy ki buildbe
+# A .gitignore fájl nem tiltja meg, hogy a .gitignore fájlt verziókövesd, csak azt, hogy pl. egy zip vagy build rendszer letöltésnél bepakolja.
+#.gitignore
+
+# 🧹 Általános szemét fájlok (különböző OS-eken és szerkesztőkben)
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.bak
+._*
+
+# 🛠️ Szerkesztő és IDE mappák
+.vscode/
+.idea/
+
+# 🔧 Node.js esetén (ha később bekerülne)
+node_modules/
+
+
+
